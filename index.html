@@ -1,8 +1,9 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio Profesional de Carlos Espinel</title>
+  <title>Portafolio de Carlos Espinel</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -11,5 +12,100 @@
       margin: 0;
       padding: 0;
       color: #333;
+      position: relative;
     }
     header {
+      background-color: #0a192f;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .profile-button {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      background-color: white;
+      color: #0a192f;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
+    }
+    .profile-button:hover {
+      background-color: #e0e0e0;
+    }
+    .modules {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .module-box {
+      background-color: white;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      text-decoration: none;
+      color: #0a192f;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .module-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .module-box h2 {
+      margin: 0 0 0.5rem;
+    }
+    .module-box p {
+      margin: 0;
+      font-size: 1rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Carlos Espinel</h1>
+    <p>Ingeniero de Sistemas en formación | Desarrollo - Análisis - Soporte</p>
+    <a href="perfil.html" class="profile-button">Perfil</a>
+  </header>
+
+  <main class="modules">
+    <a href="modulos/analisis-datos.html" class="module-box">
+      <h2>Análisis de Datos</h2>
+      <p>Power BI, visualizaciones, exploración de datos</p>
+    </a>
+
+    <a href="modulos/desarrollo-web.html" class="module-box">
+      <h2>Desarrollo Web</h2>
+      <p>Aplicativos web, front-end, back-end</p>
+    </a>
+
+    <a href="modulos/soporte.html" class="module-box">
+      <h2>Soporte Técnico</h2>
+      <p>Help Desk, soluciones a errores comunes</p>
+    </a>
+
+    <a href="modulos/bases-datos.html" class="module-box">
+      <h2>Bases de Datos SQL</h2>
+      <p>Consultas, modelado, optimización</p>
+    </a>
+  </main>
+</body>
+</html>
+
